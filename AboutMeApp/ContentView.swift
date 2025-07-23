@@ -6,14 +6,50 @@
 //
 
 import SwiftUI
-
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Jenny Paek")
+        ZStack {
+            Color (.black)
+                .ignoresSafeArea()
+            
+        Text("Jenny Paek")
+                .font(.system(size: 30, weight: .bold, design: .default))
+                .foregroundColor(.white)
+                .padding()
+                .position(x: 250, y: 400)
+            
+        
+        
+            
+            
+    
+            
+            VStack(alignment: .leading, spacing: 20) {
+            
+                ScrollView {
+                    VStack(spacing: 30) {
+                    Image("jenny")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 500, height: 450)
+                            .ignoresSafeArea(.all)
+        //                        .imageScale(.large)
+        //                        .foregroundStyle(.tint)
+                        
+                            
+                    }
+                }
+                Image("community!")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 400, height: 350)
+                    .ignoresSafeArea(.all)
+//                        .imageScale(.large)
+//                        .foregroundStyle(.tint)
+                
+
+            }
+            
             
         }
         .padding()
