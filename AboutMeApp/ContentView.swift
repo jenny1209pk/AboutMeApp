@@ -18,9 +18,18 @@ struct ContentView: View {
                 .padding()
                 .position(x: 250, y: 400)
             
-        
-        
+            Image("community")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 350, height: 500)
+                .ignoresSafeArea(.all)
+                .position(x: 250, y: 670)
             
+        Text("Community")
+                .font(.system(size: 30, weight: .bold, design: .default))
+                .foregroundColor(.white)
+                .padding()
+                .position(x: 250, y: 530)
             
     
             
