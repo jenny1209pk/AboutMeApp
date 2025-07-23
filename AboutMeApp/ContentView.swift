@@ -31,6 +31,13 @@ struct ContentView: View {
                 .padding()
                 .position(x: 250, y: 530)
             
+        Text("Hi! My name is Jenny and I am 15 years old. I love to read, scrapbook, sing, and play many instruments!")
+                .font(.headline)
+                .multilineTextAlignment(.center)
+                .foregroundColor(.white)
+                .padding(.horizontal, 30)
+                .position(x: 250, y: 455)
+                .font(.system(size: 10, weight: .bold, design: .default))
     
             
             VStack(alignment: .leading, spacing: 20) {
